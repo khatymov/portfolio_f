@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yidy#^mgdr9^3h%bvhjgl*$cix6r0($*3q_uo1fz*cuk-e@@x&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']#['.localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1']
 
 
 # Application definition
@@ -53,8 +53,7 @@ MIDDLEWARE = [
 
 
 ROOT_URLCONF = 'portfolio_f.urls'
-#'DIRS': [BASE_DIR / 'myportfolio/templates']
-#'DIRS': [BASE_DIR / 'myportfolio/templates']
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
