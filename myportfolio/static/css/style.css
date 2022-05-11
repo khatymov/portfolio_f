@@ -1,0 +1,17 @@
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+nav {
+    background: url("../img/tvs.jpeg");
+}
+
+nav > div > ul > li *{
+    color: cornsilk;
+    font-weight: bold;
+}
