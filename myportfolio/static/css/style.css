@@ -83,3 +83,12 @@ nav > div > ul > li *{
     color: cornsilk;
     font-weight: bold;
 }
+
+.list_container * {
+    background-color: #11ffee00; /* Fully transparent */
+}
+.list-group-item:hover {
+    background-color: coral;
+    opacity: 0.7;
+    filter: alpha(opacity=0.6);
+}
