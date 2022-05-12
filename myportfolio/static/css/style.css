@@ -11,6 +11,40 @@ html {
     min-height: 100%;
 }
 
+
+/*-----------------------------------------------------------*/
+/*--------------------------VARS-------------------------- */
+/*-----------------------------------------------------------*/
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-150 {
+    margin-left: 150px;
+}
+
+
+.mr-150 {
+    margin-right: 150px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------------------------*/
+/*--------------------------HEADER-------------------------- */
+/*-----------------------------------------------------------*/
+
 .wrapper {
     position: relative;
     display: flex;
@@ -87,6 +121,12 @@ nav > div > ul > li *{
     font-weight: bold;
 }
 
+.list-group-item {
+    border: none;
+    border-width : 0;
+    border : 0;
+}
+
 .list_container * {
     background-color: #11ffee00; /* Fully transparent */
 }
@@ -96,31 +136,9 @@ nav > div > ul > li *{
     filter: alpha(opacity=0.6);
 }
 
-
-.ml-50 {
-    margin-left: 50px;
-}
-
-.ml-150 {
-    margin-left: 150px;
-}
-
-
-.mr-150 {
-    margin-right: 150px;
-}
-
-.mr-50 {
-    margin-right: 50px;
-}
-
-.mt-50 {
-    margin-top: 50px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
+/*-----------------------------------------------------------*/
+/*--------------------------INTRO-------------------------- */
+/*-----------------------------------------------------------*/
 
 .intro {
     position: relative;
@@ -139,18 +157,40 @@ nav > div > ul > li *{
     line-height: 58px;
 }
 
-
+.intro {
+    border:10px solid black;
+    padding: 2rem 1rem;
+    min-height: 3em;
+    resize: both;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+}
+/*-----------------------------------------------------------*/
+/*------------------------ EDUCATION------------------------ */
+/*-----------------------------------------------------------*/
+.edu_name {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+}
 .education {
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-
-    margin-top: 150px;
-    /*background: rgb(6,25,25);*/
-    /*background: linear-gradient(90deg, rgba(6,25,25,1) 33%, rgba(41,16,120,0.923406862745098) 56%, rgba(142,55,55,0.9066001400560224) 88%);*/
 }
 
 .card-body {
-    background: rgb(6,25,25);
     background: linear-gradient(90deg, rgba(6,25,25,1) 4%, rgba(51,16,120,0.923406862745098) 56%, rgba(142,55,55,0.9066001400560224) 88%);
+    transform: perspective(1500px) rotateY(5deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
+
+.card {
+    background-color:rgba(0, 0, 0, 0.0);
+    border: none;
+    border-width : 0;
+    border : 0;
+}
+
