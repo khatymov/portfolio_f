@@ -1,5 +1,7 @@
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
+    -webkit-font-smoothing: antialiased;
+    font-family: PP,helvetica,arial,sans-serif;
 }
 
 html {
@@ -7,11 +9,86 @@ html {
     min-height: 100%;
 }
 
-nav {
-    background: url("../img/tvs.jpeg");
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+.wrapper > h1 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.wrapper a {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 58px;
+}
+
+.wrapper > p {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 58px;
+}
+
+.wrapper > .list_container {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+
+.wrapper {
+    animation: scroll 70s linear infinite;
+    background: url("../img/country_codes.jpg");
+    position: absolute;
+    color: #eee;
+    height: 350px;
+    min-width: 360px;
+    width: 100%;
+
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
 }
 
 nav > div > ul > li *{
     color: cornsilk;
     font-weight: bold;
+}
+
+.list_container * {
+    background-color: #11ffee00; /* Fully transparent */
+}
+.list-group-item:hover {
+    background-color: coral;
+    opacity: 0.7;
+    filter: alpha(opacity=0.6);
 }
