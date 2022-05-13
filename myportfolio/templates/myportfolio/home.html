@@ -37,7 +37,7 @@
         <div class="list_container d-flex justify-content-center">
             <ul class="list-group list-group-horizontal-md">
                 <li class="list-group-item">
-                    <a href="#">
+                    <a href="static/download/resume.pdf" download="resume">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-download" viewBox="0 0 16 16">
                             <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
@@ -119,7 +119,7 @@
     </div>
 
     <div class="container">
-        <h1 class="edu_name text-center" id="projects"> Projects </h1>
+        <h1 class="edu_name text-center" id="projects" style="font-size:40"> Projects </h1>
         <div class="row">
             <div class="card flex-row mr-auto">
                 <img class="card-img-left example-card-img-responsive rounded"
@@ -188,10 +188,27 @@
         </div>
     </div>
 
-    <div class="container">
-
-
+    <div class="container" id="skills">
+        <h1 class="text-center">Skills</h1>
+        <div class="d-flex justify-content-center">
+            <div class="skills_list">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Python</li>
+                    <li class="list-inline-item">Django</li>
+                    <li class="list-inline-item">Django REST framework</li>
+                    <li class="list-inline-item">C++ 14/17</li>
+                    <li class="list-inline-item">STL</li>
+                    <li class="list-inline-item">SQLite</li>
+                    <li class="list-inline-item">Git</li>
+                    <li class="list-inline-item">Unit Testing</li>
+                    <li class="list-inline-item">Agile</li>
+                    <li class="list-inline-item">bash</li>
+                    <li class="list-inline-item">Docker</li>
+                    <li class="list-inline-item">CI/CD</li>
+                    <li class="list-inline-item">CSS</li>
+                    <li class="list-inline-item">html</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 {% endblock %}
-{#{% block content %} {% endblock %}#}
